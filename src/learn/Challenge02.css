@@ -1,0 +1,14 @@
+main {
+  text-align: center;
+}
+p {
+  margin: 0;
+  text-align: left;
+}
+li {
+  list-style: none;
+}
+
+.deleted {
+  text-decoration: line-through;
+}
