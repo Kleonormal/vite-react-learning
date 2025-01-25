@@ -3,12 +3,14 @@ import Challenge01 from "./learn/Challenge01";
 import Challenge02 from "./learn/Challenge02";
 import Learn01 from "./learn/Learn01";
 import Learn04 from "./learn/Learn04";
-import JsLearning from "./learn/Jslearning";
+import TryReact from "./learn/TryReact02";
+import UseEffect from "./learn/UseEffect";
 
 function App() {
   return (
     <>
-      <JsLearning />
+      {/* <TryReact /> */}
+      <UseEffect />
       {/* <Challenge02 /> */}
       {/* <Learn04 /> */}
       {/* <Challenge01 /> */}

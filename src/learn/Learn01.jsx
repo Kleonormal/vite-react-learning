@@ -54,11 +54,6 @@ function Learn01() {
         </button>
         <AppButton>Register</AppButton>
       </form>
-
-      {/* <div style={{ fontSize: "50px", lineHeight: "2em" }}>
-        <div style={{ fontSize: "12px" }}>11111</div>
-        <div style={{ fontSize: "12px" }}>11111</div>
-      </div> */}
     </>
   );
 }

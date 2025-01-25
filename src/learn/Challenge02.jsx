@@ -27,7 +27,7 @@ import { useState } from "react";
 function Challenge02() {
   const [toDoItem, setToDoItem] = useState("");
   const [toDOList, setToDoList] = useState([]);
-  const [doneCount, setDoneCount] = useState(0);
+  const [doneCount, setDoneCount] = useState(0); // 条目直接删除存在bug
 
   function addItem(event) {
     event.preventDefault();
@@ -65,7 +65,7 @@ function Challenge02() {
         {value[0]}{" "}
         <button
           onClick={() => {
-            if (done ^ value[1]) {
+            if (!value[1]) {
               setDoneCount(doneCount - 1);
             }
             setToDoList([
@@ -82,7 +82,7 @@ function Challenge02() {
 
   return (
     <main>
-      <h1>React Todo List</h1>
+      <h1>Todo List</h1>
       <form onSubmit={(event) => addItem(event)}>
         <input
           value={toDoItem}
